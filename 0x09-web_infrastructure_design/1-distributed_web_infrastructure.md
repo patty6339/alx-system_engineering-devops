@@ -1,5 +1,5 @@
 
-tination for a three-server web infrastructure
+# Explanation for a three-server web infrastructure
 
 For a design a three-server web infrastructure that hosts the website www.foobar.com. Here's what I came up with:
 
