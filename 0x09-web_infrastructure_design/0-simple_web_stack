@@ -1,8 +1,8 @@
  # Explanation of the Concepts  
 
-* Server: A server is a computer system that provides services or resources to other computers or devices on a network. In this case, we have one server that will host our website.
+* Server *: A server is a computer system that provides services or resources to other computers or devices on a network. In this case, we have one server that will host our website.
 
-* Domain name: The domain name is a unique name that identifies a website on the internet. It is used to translate human-readable domain names into machine-readable IP addresses. In this case, the domain name is foobar.com, and we have configured a DNS record with a www subdomain that points to the server's IP address 8.8.8.8.
+* Domain name *: The domain name is a unique name that identifies a website on the internet. It is used to translate human-readable domain names into machine-readable IP addresses. In this case, the domain name is foobar.com, and we have configured a DNS record with a www subdomain that points to the server's IP address 8.8.8.8.
 
 * DNS record: The www in www.foobar.com is a subdomain that is used to specify a particular service or resource on a domain. In this case, it indicates the web server that will handle HTTP requests for the website.
 
