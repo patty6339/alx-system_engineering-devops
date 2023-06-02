@@ -1,6 +1,7 @@
 # Distributed Web Infrastructure #
 
-https://imgur.com/a/HYOt572
+![1-distributed_web_infrastructure](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/083c1e96-e14f-413a-bd92-db2349f6c7bf)
+
 
 # Description #
 
