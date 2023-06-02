@@ -1,6 +1,7 @@
 # Secured and Monitored Web Infrastructure #
 
-https://imgur.com/a/iwwDvO7
+![2-secured_and_monitored_web_infrastructure](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/c1f2c561-37a8-42e8-9fea-2243f0f7b768)
+
 
 # Description #
 
