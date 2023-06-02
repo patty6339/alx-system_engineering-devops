@@ -1,6 +1,7 @@
 # Simple Web Stack #
 
-https://imgur.com/a/LyIggy2
+https://github.com/patty6339/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.jpg?raw=true
+
 
 # Description #
 
