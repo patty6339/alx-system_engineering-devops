@@ -1,6 +1,6 @@
 # Simple Web Stack #
 
-https://imgur.com/a/LyIggy2
+![0-simple_web_stack](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/0bfeb283-1654-4276-85f7-6064396a96c5)
 
 # Description #
 

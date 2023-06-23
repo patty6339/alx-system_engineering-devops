@@ -1,6 +1,7 @@
 # Scaled Up Web Infrastructure #
 
-https://imgur.com/a/mUudbYw
+![3-scale_up](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/a0927894-2071-456c-9dd5-821372303344)
+
 
 # Description #
 
