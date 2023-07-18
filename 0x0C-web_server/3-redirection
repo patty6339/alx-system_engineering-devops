@@ -1,30 +1,28 @@
 #!/usr/bin/env bash
 # Installs Nginx with the following configurations:
-## server
-## Nginx should be listening on port 80
-## When querying Nginx at its root / with a GET request (requesting a page)\
-### using curl, it must return a page that contains the string Hello World!
-## As an answer file, write a Bash script that configures a new Ubuntu machine\
-### to respect above requirements (this script will be run on the server itself)
-## You can’t use systemctl for restarting nginx
+#+    Listens on port 80.
+#+    Returns a page containing "Hello World!" when queried
+#++    at the root with a curl GET request.
+#/redirect_me is redirecting to another page
 
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 
-touch /var/www/html/index.html
-echo "Hello World!" > /var/www/html/index.html
+# allowing nginx on port 80
+sudo ufw allow 'Nginx HTTP'
 
-printf %s "server {
-    listen		80 default_server;
-    listen		[::]:80 default_server;
+# Give the user ownership to website files
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
 
-    root		/var/www/html;
-    index		index.html index.htm index.nginx-debian.html;
+# Backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
 
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-}
-" > /etc/nginx/sites-available/default
+# Creating new index
+echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 
-service nginx restart
+# Setting up /redirect_me
+sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+
+# Restarting nginx
+sudo service nginx restart
