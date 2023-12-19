@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# goal is to dispay all active IPv4 addresses on the machine.
-
-ifconfig | grep "inet addr" | cut -d: -f2 | cut -d" " -f1
