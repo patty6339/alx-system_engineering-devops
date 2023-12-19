@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-# Parses Apache log files in list format.
-#   Displays the IP and HTTP status code.
-
-awk '{print $1, $9}' /var/log/apache2/access.log
