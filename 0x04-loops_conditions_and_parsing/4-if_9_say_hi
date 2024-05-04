@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Initialize counter
+counter=1
+
+# Loop until counter reaches 10
+while [ $counter -le 10 ]; do
+    # Check if it's the 9th iteration
+    if [ $counter -eq 9 ]; then
+        echo "Best School"
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    
+    # Increment counter
+    ((counter++))
+done
+
