@@ -1,32 +1,18 @@
 #!/usr/bin/env bash
+# Displays the time for 12 horus and 59 minutes.
+#   Displays hours from 0 to 12
+#   Displays minutes from 1 to 59
 
-# Initialize variables
 hour=0
-minute=1
 
-# Loop until the first 70 lines are printed
-counter=0
-while [ $counter -lt 70 ]; do
-    # Print the time
-    printf "%02d:%02d\n" $hour $minute
-
-    # Increment minute
-    ((minute++))
-
-    # Check if minute reaches 60
-    if [ $minute -eq 60 ]; then
-        # Reset minute and increment hour
-        minute=0
-        ((hour++))
-    fi
-
-    # Check if hour reaches 13
-    if [ $hour -eq 13 ]; then
-        # Reset hour to 0
-        hour=0
-    fi
-
-    # Increment counter
-    ((counter++))
+while [ $hour -le 12 ]
+do
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
 done
-
