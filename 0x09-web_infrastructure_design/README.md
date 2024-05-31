@@ -48,5 +48,3 @@ A **single point of failure (SPOF)** is a part of a system that, if it fails, wi
 
 ### What is a Firewall
 A **firewall** is a network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls establish a barrier between trusted internal networks and untrusted external networks, such as the internet. There are different types of firewalls, including packet-filtering firewalls, stateful inspection firewalls, proxy firewalls, and next-generation firewalls (NGFW).
-
-Feel free to ask if you need more details on any of these topics!
