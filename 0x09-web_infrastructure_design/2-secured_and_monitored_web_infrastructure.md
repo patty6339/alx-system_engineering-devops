@@ -1,27 +1,25 @@
 ## The Architecture
 
+## Description
 
+This is a 3-server web infrastructure that is secured, monitored, and serves encrypted traffic.
 
-### Additional Elements and Their Purpose
+## Specifics About This Infrastructure
 
-1. **3 Firewalls**: Firewalls are added to control and monitor incoming and outgoing traffic to the web servers and database server. They help protect against unauthorized access and potential attacks.
+# The purpose of the firewalls.
 
-2. **SSL Certificate**: An SSL certificate is used to serve www.foobar.com over HTTPS, ensuring secure and encrypted communication between the client and the web servers. This protects sensitive data and improves user trust.
+The firewalls are for protecting the network (web servers, anyway) from unwanted and unauthorized users by acting as an intermediary between the internal network and the external network and blocking the incoming traffic matching the aforementioned criteria.
 
-3. **3 Monitoring Clients**: Monitoring clients are added to collect data for monitoring services like Sumo Logic. They help track server performance, detect anomalies, and provide insights into the infrastructure's health.
+# The purpose of the SSL certificate.
 
-### Monitoring and Data Collection
+The SSL certificate is for encrypting the traffic between the web servers and the external network to prevent man-in-the-middle attacks (MITM) and network sniffers from sniffing the traffic which could expose valuable information. The SSL certs ensure privacy, integrity, and identification.
 
-The monitoring server collects data from the monitoring clients on the web servers and database server. This data includes server metrics, application logs, and network traffic. The monitoring tool analyzes the collected data to provide real-time monitoring, alerting, and reporting capabilities.
+# The purpose of the monitoring clients.
 
-To monitor the web server's QPS (Queries Per Second), you can configure the monitoring tool to collect and analyze the web server's access logs. This will provide insights into the server's traffic patterns and help identify any spikes or anomalies in QPS.
+The monitoring clients are for monitoring the servers and the external network. They analyse the performance and operations of the servers, measure the overall health, and alert the administrators if the servers are not performing as expected. The monitoring tool observes the servers and provides key metrics about the servers' operations to the administrators. It automatically tests the accessibility of the servers, measures response time, and alerts for errors such as corrupt/missing files, security vulnerabilities/violations, and many other issues.
 
-### Potential Issues
+# Issues With This Infrastructure
 
-1. **SSL Termination at the Load Balancer**: Terminating SSL at the load balancer level can be an issue because it increases the load on the load balancer and may impact its performance. It also means that the web servers will receive unencrypted traffic, which could be a security concern if the communication between the load balancer and web servers is not secured.
-
-2. **Single MySQL Server for Writes**: Having only one MySQL server capable of accepting writes is a potential single point of failure. If the database server fails or becomes unavailable, the entire application will be affected. To mitigate this, you can implement a high availability (HA) solution for the database, such as a master-slave replication setup or a database cluster.
-
-3. **Identical Server Components**: Having servers with the same components (database, web server, and application server) can be problematic if there is a software or configuration issue that affects all the servers simultaneously. To improve resilience, you can consider separating the components onto different servers or using different software versions on different servers.
-
-By addressing these issues and implementing best practices for security, scalability, and high availability, you can enhance the overall reliability and performance of the web infrastructure.
+- Terminating SSL at the load balancer level would leave the traffic between the load balancer and the web servers unencrypted.
+- Having one MySQL server is an issue because it is not scalable and can act as a single point of failure for the web infrastructure.
+- Having servers with all the same components would make the components contend for resources on the server like CPU, Memory, I/O, etc., which can lead to poor performance and also make it difficult to locate the source of the problem. A setup such as this is not easily scalable.
