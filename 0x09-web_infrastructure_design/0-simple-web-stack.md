@@ -1,6 +1,6 @@
 # The Architecture
+![0-simple_web_stack](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/9df31d7b-f08d-42a7-847c-cd4d7d05fc51)
 
-<img width="519" alt="SingleWebServer" src="https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/592452d1-f202-43ca-b535-485d093a0ddb">
 
 # Description
 This is a simple web infrastructure that hosts a website that is reachable via www.foobar.com. There are no firewalls or SSL certificates for protecting the server's network. Each component (database, application server) has to share the resources (CPU, RAM, and SSD) provided by the server.
