@@ -1,6 +1,6 @@
 # This repo is for the web infrastructure task
 
-Here are some of the concepts covered in the task
+Here are some of the concepts covered in the project
 
 ### What is a Database?
 A **database** is an organized collection of structured information or data, typically stored electronically in a computer system. A database is managed by a database management system (DBMS). Together, the data and the DBMS, along with the applications associated with them, are referred to as a database system. Databases are used to store, manage, and retrieve information efficiently.
