@@ -1,6 +1,5 @@
 # The Architecture
-
-
+<img width="644" alt="1-distributed_web_infrastructure" src="https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/4bf3e718-67bc-4f53-8cf5-05d73fab0679">
 
 # Description
 
