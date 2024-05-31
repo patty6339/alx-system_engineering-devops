@@ -1,4 +1,5 @@
 ### The Architecture
+![3-scale_up](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/89013ea8-4101-49aa-9b22-b232bfc4ad88)
 
 
 ### Description
