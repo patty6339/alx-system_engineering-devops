@@ -1,8 +1,9 @@
-![alt text] (https://github.com/patty6339/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/SingleWebServer.PNG?raw=true)
+# The Architecture
+
+<img width="519" alt="SingleWebServer" src="https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/592452d1-f202-43ca-b535-485d093a0ddb">
 
 # Description
 This is a simple web infrastructure that hosts a website that is reachable via www.foobar.com. There are no firewalls or SSL certificates for protecting the server's network. Each component (database, application server) has to share the resources (CPU, RAM, and SSD) provided by the server.
-
 # Specifics About This Infrastructure
 What a server is.
 A server is a computer hardware or software that provides services to other computers, which are usually referred to as clients.
@@ -36,3 +37,4 @@ When we need to run some maintenance checks on any component, they have to be pu
 
 - Cannot scale if there's too much incoming traffic.
 It would be hard to scale this infrastructure becauses one server contains the required components. The server can quickly run out of resources or slow down when it starts receiving a lot of requests.
+
