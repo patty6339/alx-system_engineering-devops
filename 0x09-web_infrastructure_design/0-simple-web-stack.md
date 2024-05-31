@@ -1,5 +1,5 @@
 # The Architecture
-<p> ![0-simple_web_stack](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/9df31d7b-f08d-42a7-847c-cd4d7d05fc51) </p>
+![0-simple_web_stack](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/9df31d7b-f08d-42a7-847c-cd4d7d05fc51)
 
 
 # Description
