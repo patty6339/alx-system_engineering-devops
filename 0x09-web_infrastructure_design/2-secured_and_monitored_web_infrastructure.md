@@ -1,4 +1,5 @@
 ## The Architecture
+![2-secured_and_monitored_web_infrastructure](https://github.com/patty6339/alx-system_engineering-devops/assets/21007127/bef01d75-bc80-432a-84c7-59d3f2eac968)
 
 ## Description
 
